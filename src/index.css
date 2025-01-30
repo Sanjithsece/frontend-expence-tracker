@@ -1,0 +1,93 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+* {
+  box-sizing: border-box;
+}
+body{
+  background-color: #e2dddd;
+}
+.container{
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.transaction-card{
+  font-style: italic;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6%;
+  padding: 8px;
+  box-shadow: 1px 1px 1px  ;
+}
+
+.transaction-card.positive{
+     border-right: 5px solid green;
+}
+.transaction-card.negative{
+  border-right: 5px solid red;
+}
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+form input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius:4px;
+  border : 1px solid #ccc;
+}
+form button:hover{
+background-color: #7b2ec4;
+box-shadow: 20%;
+}
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(20, 1, 227);
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.income, .expence {
+  flex: 0;
+  text-align: center;
+}
+
+.income h5 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.income h6 {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: green;
+}
+.expense h5 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+.expense h6 {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: red;
+}
